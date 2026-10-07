@@ -66,22 +66,22 @@
       .logo {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
+  height: 100%;
 }
 
 .logo img {
-  width: 145px;
+  width: 165px;
   height: auto;
   display: block;
+  object-fit: contain;
+  transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
-    .logo span {
-      display: block;
-      font-family: "DM Sans", sans-serif;
-      font-size: 9px;
-      letter-spacing: 4px;
-      margin-top: 2px;
-      opacity: .8;
-    }
+.logo:hover img {
+  transform: scale(1.02);
+  opacity: 0.92;
+}
 
     .nav-links {
       display: flex;
