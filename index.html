@@ -1,354 +1,1547 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Arun Urban Homes | Premium Interior Design</title>
-
-  <meta
-    name="description"
-    content="Arun Urban Homes creates refined, contemporary interiors designed around the way you live."
-  >
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
-
-  <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+<title>Arun Urban Homes | Premium Interior Design</title>
 
-    body {
-      font-family: "DM Sans", sans-serif;
-      color: #24221f;
-      background: #f8f5ef;
-      line-height: 1.6;
-    }
+<meta name="description" content="Arun Urban Homes creates elegant, timeless and personalised interior spaces in Hyderabad.">
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    img {
-      max-width: 100%;
-      display: block;
-    }
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
-    /* =========================
-       HEADER
-    ========================= */
+<style>
 
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 108px;
-      z-index: 1000;
+/* =========================
+   RESET
+========================= */
 
-      background: rgba(250, 247, 240, 0.97);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
+html {
+  scroll-behavior: smooth;
+}
 
-      border-top: 2px solid #c7a15a;
-      border-bottom: 1px solid rgba(183, 148, 75, 0.28);
-    }
+body {
+  font-family: "DM Sans", sans-serif;
+  background: #f8f5ef;
+  color: #292722;
+  line-height: 1.6;
+}
 
-    nav {
-      width: 88%;
-      max-width: 1500px;
-      height: 100%;
-      margin: auto;
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
+img {
+  max-width: 100%;
+  display: block;
+}
 
-    /* =========================
-       LOGO
-    ========================= */
 
-    .logo {
-      width: 190px;
-      height: 100px;
+/* =========================
+   HEADER
+========================= */
 
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 105px;
+  z-index: 9999;
 
-      overflow: visible;
-      flex-shrink: 0;
-    }
+  background: rgba(250,248,243,0.97);
 
-    .logo img {
-      width: 170px;
-      height: 92px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
-      object-fit: contain;
-      object-position: center;
+  border-top: 2px solid #c8a45c;
+  border-bottom: 1px solid rgba(190,157,88,0.25);
+}
 
-      display: block;
+nav {
+  width: 90%;
+  max-width: 1500px;
+  height: 100%;
+  margin: auto;
 
-      transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-      mix-blend-mode: multiply;
 
-      transition: transform 0.4s ease;
-    }
+/* LOGO */
 
-    .logo:hover img {
-      transform: scale(1.03);
-    }
+.logo {
+  width: 205px;
+  height: 100px;
 
-    /* =========================
-       NAVIGATION
-    ========================= */
+  display: flex;
+  align-items: center;
 
-    .nav-links {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  flex-shrink: 0;
+}
 
-      gap: 42px;
+.logo img {
+  width: 180px;
+  height: 92px;
 
-      list-style: none;
+  object-fit: contain;
+  object-position: center;
 
-      margin-left: auto;
-      margin-right: auto;
-    }
+  mix-blend-mode: multiply;
+}
 
-    .nav-links a {
-      position: relative;
 
-      font-size: 11px;
-      font-weight: 600;
+/* NAV */
 
-      letter-spacing: 1.8px;
-      text-transform: uppercase;
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 42px;
 
-      color: #4b4740;
+  list-style: none;
+}
 
-      transition: color 0.3s ease;
-    }
+.nav-links a {
+  position: relative;
 
-    .nav-links a::after {
-      content: "";
+  font-size: 11px;
+  font-weight: 600;
 
-      position: absolute;
-      left: 0;
-      bottom: -8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
-      width: 0;
-      height: 1px;
+  color: #4c4841;
 
-      background: #b88a36;
+  transition: 0.3s ease;
+}
 
-      transition: width 0.3s ease;
-    }
+.nav-links a:hover {
+  color: #b4893c;
+}
 
-    .nav-links a:hover {
-      color: #b88a36;
-    }
+.nav-links a::after {
+  content: "";
 
-    .nav-links a:hover::after {
-      width: 100%;
-    }
+  position: absolute;
+  left: 0;
+  bottom: -8px;
 
-    /* =========================
-       HEADER BUTTON
-    ========================= */
+  width: 0;
+  height: 1px;
 
-    .header-cta {
-      min-width: 150px;
-      height: 48px;
+  background: #b4893c;
 
-      padding: 0 25px;
+  transition: 0.3s ease;
+}
 
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+.nav-links a:hover::after {
+  width: 100%;
+}
 
-      background: #b88a36;
-      color: white;
 
-      border: 1px solid #b88a36;
+/* HEADER BUTTON */
 
-      font-size: 11px;
-      font-weight: 600;
+.header-button {
+  height: 48px;
+  min-width: 145px;
 
-      letter-spacing: 1.7px;
-      text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-      transition: all 0.3s ease;
-    }
+  background: #b78b3d;
+  color: white;
 
-    .header-cta:hover {
-      background: transparent;
-      color: #b88a36;
-    }
+  border: 1px solid #b78b3d;
 
-    /* =========================
-       HERO
-    ========================= */
+  font-size: 10px;
+  font-weight: 600;
 
-    .hero {
-      min-height: 100vh;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 
-      position: relative;
+  transition: 0.3s ease;
+}
 
-      display: flex;
-      align-items: center;
+.header-button:hover {
+  background: transparent;
+  color: #b78b3d;
+}
 
-      background-image:
-        linear-gradient(
-          90deg,
-          rgba(18, 17, 15, 0.75),
-          rgba(18, 17, 15, 0.25)
-        ),
-        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2400&q=95");
 
-      background-size: cover;
-      background-position: center;
-    }
+/* =========================
+   HERO
+========================= */
 
-    .hero-content {
-      width: 88%;
-      max-width: 1500px;
+.hero {
+  min-height: 100vh;
 
-      margin: 108px auto 0;
+  display: flex;
+  align-items: center;
 
-      color: white;
-    }
+  position: relative;
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17,16,14,0.78),
+      rgba(17,16,14,0.20)
+    ),
+    url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2400&q=95");
 
-      margin-bottom: 24px;
+  background-size: cover;
+  background-position: center;
+}
 
-      font-size: 11px;
-      font-weight: 600;
+.hero-content {
+  width: 90%;
+  max-width: 1500px;
 
-      letter-spacing: 3px;
-      text-transform: uppercase;
+  margin: 105px auto 0;
 
-      color: #d8bd82;
-    }
+  color: white;
+}
 
-    .eyebrow::before {
-      content: "";
+.hero-small {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 
-      width: 45px;
-      height: 1px;
+  margin-bottom: 25px;
 
-      background: #d8bd82;
-    }
+  color: #d8bc7c;
 
-    .hero h1 {
-      max-width: 850px;
+  font-size: 11px;
+  font-weight: 600;
 
-      font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 
-      font-size: clamp(54px, 7vw, 105px);
+.hero-small::before {
+  content: "";
 
-      font-weight: 500;
+  width: 45px;
+  height: 1px;
 
-      line-height: 0.98;
+  background: #d8bc7c;
+}
 
-      letter-spacing: -3px;
-    }
+.hero h1 {
+  max-width: 850px;
 
-    .hero h1 span {
-      color: #d8bd82;
-      font-style: italic;
-    }
+  font-family: "Playfair Display", serif;
 
-    .hero-description {
-      max-width: 580px;
+  font-size: clamp(55px, 7vw, 105px);
 
-      margin-top: 32px;
+  font-weight: 400;
 
-      font-size: 17px;
+  line-height: 0.98;
 
-      color: rgba(255,255,255,0.82);
-    }
+  letter-spacing: -3px;
+}
 
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
+.hero h1 span {
+  color: #d7b76f;
+  font-style: italic;
+}
 
-      margin-top: 40px;
-    }
+.hero-description {
+  max-width: 570px;
 
-    .btn {
-      min-height: 54px;
+  margin-top: 30px;
 
-      padding: 0 28px;
+  color: rgba(255,255,255,0.82);
 
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+  font-size: 17px;
+}
 
-      font-size: 11px;
-      font-weight: 600;
+.hero-buttons {
+  display: flex;
+  gap: 15px;
 
-      letter-spacing: 1.7px;
-      text-transform: uppercase;
+  margin-top: 38px;
+}
 
-      transition: all 0.3s ease;
-    }
+.button {
+  min-height: 54px;
 
-    .btn-primary {
-      background: #c49a4a;
-      color: white;
+  padding: 0 28px;
 
-      border: 1px solid #c49a4a;
-    }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    .btn-primary:hover {
-      background: #a9792d;
-    }
+  font-size: 10px;
+  font-weight: 600;
 
-    .btn-outline {
-      color: white;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
 
-      border: 1px solid rgba(255,255,255,0.6);
-    }
+  transition: 0.3s ease;
+}
 
-    .btn-outline:hover {
-      background: white;
-      color: #25231f;
-    }
+.button-gold {
+  background: #c29a4d;
+  color: white;
 
-    /* =========================
-       COMMON
-    ========================= */
+  border: 1px solid #c29a4d;
+}
 
-    section {
-      padding: 120px 6%;
-    }
+.button-gold:hover {
+  background: #a77c31;
+}
 
-    .section-container {
-      max-width: 1250px;
-      margin: auto;
-    }
+.button-light {
+  color: white;
 
-    .
+  border: 1px solid rgba(255,255,255,0.65);
+}
+
+.button-light:hover {
+  background: white;
+  color: #292722;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.section {
+  padding: 125px 7%;
+}
+
+.container {
+  max-width: 1350px;
+  margin: auto;
+}
+
+.label {
+  margin-bottom: 18px;
+
+  color: #b4893c;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(42px, 5vw, 70px);
+
+  font-weight: 400;
+
+  line-height: 1.08;
+}
+
+.text {
+  max-width: 650px;
+
+  color: #706b62;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+  background: #f8f5ef;
+}
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 85px;
+
+  align-items: center;
+}
+
+.about-image {
+  height: 650px;
+
+  background:
+    url("https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1600&q=90")
+    center/cover no-repeat;
+}
+
+.about-content .text {
+  margin-top: 30px;
+}
+
+.signature {
+  margin-top: 35px;
+
+  font-family: "Playfair Display", serif;
+
+  color: #b4893c;
+
+  font-size: 25px;
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+  background: #eee9df;
+}
+
+.services-grid {
+  margin-top: 65px;
+
+  display: grid;
+
+  grid-template-columns: repeat(3,1fr);
+
+  border-top: 1px solid rgba(70,60,45,0.18);
+  border-left: 1px solid rgba(70,60,45,0.18);
+}
+
+.service {
+  min-height: 290px;
+
+  padding: 42px 38px;
+
+  border-right: 1px solid rgba(70,60,45,0.18);
+  border-bottom: 1px solid rgba(70,60,45,0.18);
+
+  transition: 0.4s ease;
+}
+
+.service:hover {
+  background: #f8f5ef;
+  transform: translateY(-5px);
+}
+
+.service-number {
+  color: #b4893c;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 22px;
+}
+
+.service h3 {
+  margin-top: 42px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.service p {
+  margin-top: 15px;
+
+  color: #706a61;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+  background: #f8f5ef;
+}
+
+.projects-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  gap: 50px;
+}
+
+.projects-heading .text {
+  max-width: 430px;
+}
+
+.project-grid {
+  margin-top: 65px;
+
+  display: grid;
+
+  grid-template-columns: 1.25fr 0.75fr;
+
+  gap: 25px;
+}
+
+.project {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.project-large {
+  height: 700px;
+}
+
+.project-small {
+  height: 337px;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.project:hover img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 40px;
+
+  color: white;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0,0,0,0.78)
+  );
+}
+
+.project-overlay span {
+  color: #d8bc7c;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.project-overlay h3 {
+  margin-top: 7px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 30px;
+
+  font-weight: 400;
+}
+
+.project-side {
+  display: grid;
+  gap: 25px;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.process {
+  background: #292621;
+
+  color: white;
+}
+
+.process .title {
+  color: white;
+}
+
+.process-grid {
+  margin-top: 65px;
+
+  display: grid;
+
+  grid-template-columns: repeat(4,1fr);
+
+  border-top: 1px solid rgba(255,255,255,0.18);
+}
+
+.process-step {
+  padding: 38px 25px;
+
+  border-right: 1px solid rgba(255,255,255,0.18);
+}
+
+.process-step:last-child {
+  border-right: none;
+}
+
+.process-number {
+  color: #d7b76f;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 36px;
+}
+
+.process-step h3 {
+  margin-top: 35px;
+
+  font-family: "Playfair Display", serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+.process-step p {
+  margin-top: 14px;
+
+  color: rgba(255,255,255,0.62);
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+
+  background:
+    linear-gradient(
+      rgba(25,22,18,0.68),
+      rgba(25,22,18,0.68)
+    ),
+    url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=90")
+    center/cover no-repeat;
+}
+
+.contact-content {
+  width: 90%;
+  max-width: 950px;
+
+  margin: auto;
+}
+
+.contact .label {
+  color: #d7b76f;
+}
+
+.contact h2 {
+  font-family: "Playfair Display", serif;
+
+  font-size: clamp(45px,6vw,78px);
+
+  font-weight: 400;
+
+  line-height: 1.05;
+}
+
+.contact p {
+  max-width: 600px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255,255,255,0.8);
+
+  font-size: 17px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 38px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 70px 7% 30px;
+
+  background: #f1ece2;
+}
+
+.footer-grid {
+  max-width: 1350px;
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr 1fr;
+
+  gap: 70px;
+}
+
+.footer-logo {
+  width: 175px;
+  height: auto;
+
+  object-fit: contain;
+
+  margin-bottom: 20px;
+
+  mix-blend-mode: multiply;
+}
+
+.footer-description {
+  max-width: 380px;
+
+  color: #6c675f;
+
+  font-size: 14px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+
+  color: #b4893c;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  display: block;
+
+  margin-bottom: 11px;
+
+  color: #57534c;
+
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #b4893c;
+}
+
+.footer-bottom {
+  max-width: 1350px;
+
+  margin: 60px auto 0;
+
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(60,50,40,0.17);
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #777168;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1050px) {
+
+  .nav-links {
+    gap: 22px;
+  }
+
+  .logo {
+    width: 170px;
+  }
+
+  .logo img {
+    width: 155px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .process-step:nth-child(2) {
+    border-right: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  header {
+    height: 82px;
+  }
+
+  nav {
+    width: 92%;
+  }
+
+  .logo {
+    width: 135px;
+    height: 72px;
+  }
+
+  .logo img {
+    width: 125px;
+    height: 68px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .header-button {
+    min-width: 112px;
+    height: 42px;
+
+    font-size: 9px;
+  }
+
+  .hero-content {
+    width: 92%;
+
+    margin-top: 82px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section {
+    padding: 85px 6%;
+  }
+
+  .about-image {
+    height: 430px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-heading {
+    display: block;
+  }
+
+  .projects-heading .text {
+    margin-top: 25px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-large {
+    height: 500px;
+  }
+
+  .project-small {
+    height: 300px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-step {
+    border-right: none;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<nav>
+
+<a href="#top" class="logo">
+
+<img
+src="https://raw.githubusercontent.com/Nandinivalvadas/arun-urban-homes/main/WhatsApp%20Image%202026-10-07%20at%205.44.40%20PM.jpeg"
+alt="Arun Urban Homes"
+>
+
+</a>
+
+
+<ul class="nav-links">
+
+<li>
+<a href="#about">About</a>
+</li>
+
+<li>
+<a href="#services">Services</a>
+</li>
+
+<li>
+<a href="#projects">Projects</a>
+</li>
+
+<li>
+<a href="#process">Process</a>
+</li>
+
+<li>
+<a href="#contact">Contact</a>
+</li>
+
+</ul>
+
+
+<a href="#contact" class="header-button">
+Let's Talk →
+</a>
+
+</nav>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="top">
+
+<div class="hero-content">
+
+<div class="hero-small">
+Elevating Everyday Living
+</div>
+
+<h1>
+Interiors<br>
+that <span>feel</span><br>
+like home.
+</h1>
+
+<p class="hero-description">
+Thoughtfully designed spaces that balance timeless
+elegance, modern functionality and the personality
+of the people who live in them.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="button button-gold">
+Explore Projects →
+</a>
+
+<a href="#contact" class="button button-light">
+Get a Consultation
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section class="section about" id="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div class="about-image"></div>
+
+
+<div class="about-content">
+
+<div class="label">
+About Arun Urban Homes
+</div>
+
+<h2 class="title">
+Designed with intention.<br>
+Made for living.
+</h2>
+
+<p class="text">
+At Arun Urban Homes, we believe a beautiful home
+should feel effortless, personal and timeless.
+</p>
+
+<p class="text">
+From the first concept to the smallest finishing
+detail, we create interiors that combine refined
+aesthetics with everyday functionality.
+</p>
+
+<div class="signature">
+Arun Urban Homes
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="section services" id="services">
+
+<div class="container">
+
+<div class="label">
+What We Do
+</div>
+
+<h2 class="title">
+Spaces designed around you.
+</h2>
+
+
+<div class="services-grid">
+
+
+<div class="service">
+
+<div class="service-number">01</div>
+
+<h3>
+Residential Interiors
+</h3>
+
+<p>
+Complete interior solutions for apartments,
+villas and independent homes.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">02</div>
+
+<h3>
+Living Spaces
+</h3>
+
+<p>
+Elegant living rooms and personal spaces
+designed for everyday comfort.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">03</div>
+
+<h3>
+Modular Kitchens
+</h3>
+
+<p>
+Functional kitchens combining premium finishes,
+intelligent storage and refined detailing.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">04</div>
+
+<h3>
+Custom Furniture
+</h3>
+
+<p>
+Bespoke furniture pieces created to complement
+the architecture of your home.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">05</div>
+
+<h3>
+Styling & Decor
+</h3>
+
+<p>
+Carefully selected lighting, materials and
+accessories that complete the space.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="service-number">06</div>
+
+<h3>
+Turnkey Interiors
+</h3>
+
+<p>
+End-to-end execution from concept and design
+through final handover.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section class="section projects" id="projects">
+
+<div class="container">
+
+<div class="projects-heading">
+
+<div>
+
+<div class="label">
+Selected Work
+</div>
+
+<h2 class="title">
+Spaces with a story.
+</h2>
+
+</div>
+
+<p class="text">
+A selection of thoughtfully designed interiors
+created with attention to proportion, material,
+light and detail.
+</p>
+
+</div>
+
+
+<div class="project-grid">
+
+
+<div class="project project-large">
+
+<img
+src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=90"
+alt="Luxury contemporary interior"
+>
+
+<div class="project-overlay">
+
+<span>
+Residential
+</span>
+
+<h3>
+Contemporary Residence
+</h3>
+
+</div>
+
+</div>
+
+
+<div class="project-side">
+
+
+<div class="project project-small">
+
+<img
+src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1400&q=90"
+alt="Elegant living room"
+>
+
+<div class="project-overlay">
+
+<span>
+Living
+</span>
+
+<h3>
+Warm Minimalism
+</h3>
+
+</div>
+
+</div>
+
+
+<div class="project project-small">
+
+<img
+src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1400&q=90"
+alt="Premium interior"
+>
+
+<div class="project-overlay">
+
+<span>
+Residential
+</span>
+
+<h3>
+Modern Elegance
+</h3>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PROCESS
+========================= -->
+
+<section class="section process" id="process">
+
+<div class="container">
+
+<div class="label">
+Our Process
+</div>
+
+<h2 class="title">
+From vision to reality.
+</h2>
+
+
+<div class="process-grid">
+
+
+<div class="process-step">
+
+<div class="process-number">
+01
+</div>
+
+<h3>
+Discover
+</h3>
+
+<p>
+We understand your lifestyle, requirements,
+preferences and vision.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+02
+</div>
+
+<h3>
+Design
+</h3>
+
+<p>
+Concepts, materials, layouts and details are
+carefully developed for your space.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+03
+</div>
+
+<h3>
+Create
+</h3>
+
+<p>
+Our team transforms the approved design into
+a beautifully finished interior.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+04
+</div>
+
+<h3>
+Handover
+</h3>
+
+<p>
+Your finished space is completed with attention
+to every final detail.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="contact-content">
+
+<div class="label">
+Start Your Project
+</div>
+
+<h2>
+Let's create a home
+you'll love coming back to.
+</h2>
+
+<p>
+Tell us about your space and let's discuss how
+Arun Urban Homes can bring your vision to life.
+</p>
+
+<div class="contact-buttons">
+
+<a href="https://wa.me/" class="button button-gold">
+WhatsApp Us →
+</a>
+
+<a href="mailto:hello@arunurbanhomes.com" class="button button-light">
+Send an Email
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div>
+
+<img
+class="footer-logo"
+src="https://raw.githubusercontent.com/Nandinivalvadas/arun-urban-homes/main/WhatsApp%20Image%202026-10-07%20at%205.44.40%20PM.jpeg"
+alt="Arun Urban Homes"
+>
+
+<p class="footer-description">
+Premium interior design solutions crafted with
+thoughtful planning, refined aesthetics and
+attention to detail.
+</p>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Explore
+</div>
+
+<a class="footer-link" href="#about">
+About
+</a>
+
+<a class="footer-link" href="#services">
+Services
+</a>
+
+<a class="footer-link" href="#projects">
+Projects
+</a>
+
+<a class="footer-link" href="#process">
+Process
+</a>
+
+</div>
+
+
+<div>
+
+<div class="footer-title">
+Contact
+</div>
+
+<a class="footer-link" href="#contact">
+Get a Consultation
+</a>
+
+<a class="footer-link" href="https://instagram.com/">
+Instagram
+</a>
+
+<a class="footer-link" href="https://wa.me/">
+WhatsApp
+</a>
+
+<a class="footer-link" href="mailto:hello@arunurbanhomes.com">
+Email
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+<span>
+©️ 2026 Arun Urban Homes. All rights reserved.
+</span>
+
+<span>
+Hyderabad, Telangana
+</span>
+
+</div>
+
+</footer>
+
+
+</body>
+</html>
